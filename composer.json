@@ -1,0 +1,18 @@
+{
+    "require": {
+        "bramus/router": "^1.6"
+    },
+    "scripts": {
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:3000"
+        ],
+        "tw-dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "tailwindcss -i assets/styles/style.css -o assets/styles/dist.css --watch"
+        ],
+        "tw-min": [
+            "tailwindcss -i assets/styles/style.css -o assets/styles/dist.css --minify"
+        ]
+    }
+}
